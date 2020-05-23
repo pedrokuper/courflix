@@ -1,16 +1,16 @@
-//Botones
+//PALETA DE COLORES 
 
+//Botones
 $gray: rgba(157, 151, 151, 0.541521);
 $red : #ED0A1D;
-
 //Pantalla de detalles
-
 $green: #009C04;
-
 // Textos
 $white : #fff;
+//Backgrounds 
+$black: #000;
 
-//Tipografías
+//FUENTES
 @use "fonts";
 
 
@@ -28,7 +28,7 @@ body {
 .header {
     display: flex;
     padding: 25px;
-    background-color: black;
+    background-color: $black;
 
     .logo {
         margin: 0 50px;
@@ -39,7 +39,7 @@ body {
         list-style-type: none;
 
         .nav-link {
-            color: white;
+            color: $white;
             margin: 0 10px;
             text-decoration: none;
         }
@@ -47,13 +47,57 @@ body {
 }
 
 .hero {
-
+    padding: 25px;
     background-image: url(/assets/img/bg-cover/netflix-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    color: $white;
 
-    .hero-subtitle {
-        color: $white;
+    .content {
+        width: 100%;
+        max-width: 600px;
+        margin: 100px 50px;
+
+
+        .hero-title {
+            font-weight: 700;
+            font-size: 9rem;
+
+            line-height: 8rem;
+        }
+
+        .hero-button-link {
+
+            display: inline-block;
+            margin-top: 20px;
+            color: $white;
+            text-decoration: none;
+            margin-bottom: 30px;
+
+        }
+
+        .play,
+        .my-list {
+            border-radius: 9px;
+            margin-right: 20px;
+            background-color: $gray;
+            padding: 20px 80px;
+            font-size: 400;
+        }
+
+        .hero-description {
+            line-height: 2rem;
+            font-weight: 300;
+            font-size: 1.4rem;
+
+            .hero-text {
+                margin-bottom: 1rem;
+            }
+        }
     }
+
+
+
+
 }
