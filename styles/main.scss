@@ -1,0 +1,59 @@
+//Botones
+
+$gray: rgba(157, 151, 151, 0.541521);
+$red : #ED0A1D;
+
+//Pantalla de detalles
+
+$green: #009C04;
+
+// Textos
+$white : #fff;
+
+//Tipografías
+@use "fonts";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    display: flex;
+    padding: 25px;
+    background-color: black;
+
+    .logo {
+        margin: 0 50px;
+    }
+
+    .nav-bar-list {
+        display: flex;
+        list-style-type: none;
+
+        .nav-link {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    }
+}
+
+.hero {
+
+    background-image: url(/assets/img/bg-cover/netflix-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .hero-subtitle {
+        color: $white;
+    }
+}

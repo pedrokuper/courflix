@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  padding: 25px;
+  background-color: black;
+}
+.header .logo {
+  margin: 0 50px;
+}
+.header .nav-bar-list {
+  display: flex;
+  list-style-type: none;
+}
+.header .nav-bar-list .nav-link {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url(/assets/img/bg-cover/netflix-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.hero .hero-subtitle {
+  color: #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */
