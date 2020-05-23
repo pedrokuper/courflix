@@ -10,6 +10,10 @@ $white : #fff;
 //Backgrounds 
 $black: #000;
 
+//Padding
+$padding-general : 10px;
+$margin-general: 50px;
+
 //FUENTES
 @use "fonts";
 
@@ -23,15 +27,18 @@ $black: #000;
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: $black;
 }
 
 .header {
     display: flex;
-    padding: 25px;
+    width: 100vw;
+    position: fixed;
+    padding: $padding-general;
     background-color: $black;
 
     .logo {
-        margin: 0 50px;
+        margin: 0 $margin-general;
     }
 
     .nav-bar-list {
@@ -40,24 +47,27 @@ body {
 
         .nav-link {
             color: $white;
-            margin: 0 10px;
+            margin: 0 20px;
             text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 600;
         }
     }
 }
 
 .hero {
-    padding: 25px;
+    padding: $padding-general;
     background-image: url(/assets/img/bg-cover/netflix-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     color: $white;
+    margin-bottom: 10px;
 
     .content {
         width: 100%;
         max-width: 600px;
-        margin: 100px 50px;
+        margin: 150px $margin-general;
 
 
         .hero-title {
@@ -65,6 +75,10 @@ body {
             font-size: 9rem;
 
             line-height: 8rem;
+        }
+
+        .hero-subtitle {
+            margin-bottom: 25px;
         }
 
         .hero-button-link {
@@ -100,4 +114,35 @@ body {
 
 
 
+}
+
+.series {
+
+    padding: $padding-general;
+    margin-left: $margin-general;
+    color: $white;
+
+    .carousel-wrapper {
+
+        .series-carousel {
+            display: flex;
+            overflow: hidden;
+
+
+        }
+
+
+    }
+}
+
+.keep-watching {
+    padding: $padding-general;
+    margin-left: $margin-general;
+    color: $white;
+}
+
+.recent-add {
+    padding: $padding-general;
+    margin-left: $margin-general;
+    color: $white;
 }
