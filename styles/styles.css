@@ -87,12 +87,12 @@ body {
 .series .title {
   margin: 10px 0px;
 }
-.series .carousel-wrapper {
+.series .carousel-container {
   position: relative;
   display: flex;
 }
-.series .carousel-wrapper .left-arrow,
-.series .carousel-wrapper .right-arrow {
+.series .carousel-container .glide__arrow--left,
+.series .carousel-container .glide__arrow--right {
   position: absolute;
   border: none;
   color: white;
@@ -106,23 +106,23 @@ body {
   transition: 0.2s ease all;
   opacity: 0;
 }
-.series .carousel-wrapper :hover {
+.series .carousel-container :hover {
   opacity: 100%;
 }
-.series .carousel-wrapper .left-arrow {
+.series .carousel-container .glide__arrow--left {
   left: 0;
 }
-.series .carousel-wrapper .right-arrow {
+.series .carousel-container .glide__arrow--right {
   right: 0;
 }
-.series .carousel-wrapper .series-carousel {
+.series .carousel-container .series-carousel {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
   scroll-behavior: smooth;
   padding: 20px 0;
 }
-.series .carousel-wrapper .series-carousel .carousel-img {
+.series .carousel-container .series-carousel .carousel-img {
   margin-right: 5px;
   min-width: 20%;
 }
