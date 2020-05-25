@@ -10,6 +10,46 @@ body {
   background-color: #000;
 }
 
+.carousel-container {
+  position: relative;
+  display: flex;
+}
+.carousel-container .glide__arrow--left,
+.carousel-container .glide__arrow--right {
+  position: absolute;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  height: 20%;
+  top: calc(60% - 20%);
+  width: 40px;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+  opacity: 0;
+}
+.carousel-container :hover {
+  opacity: 100%;
+}
+.carousel-container .glide__arrow--left {
+  left: 0;
+}
+.carousel-container .glide__arrow--right {
+  right: 0;
+}
+.carousel-container .series-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+.carousel-container .series-carousel .carousel-img {
+  margin-right: 5px;
+  min-width: 20%;
+}
+
 .header {
   display: flex;
   width: 100vw;
@@ -87,12 +127,18 @@ body {
 .series .title {
   margin: 10px 0px;
 }
-.series .carousel-container {
+
+.keep-watching {
+  padding: 10px;
+  margin-left: 50px;
+  color: #fff;
+}
+.keep-watching .carousel-container {
   position: relative;
   display: flex;
 }
-.series .carousel-container .glide__arrow--left,
-.series .carousel-container .glide__arrow--right {
+.keep-watching .carousel-container .glide__arrow--left,
+.keep-watching .carousel-container .glide__arrow--right {
   position: absolute;
   border: none;
   color: white;
@@ -106,31 +152,25 @@ body {
   transition: 0.2s ease all;
   opacity: 0;
 }
-.series .carousel-container :hover {
+.keep-watching .carousel-container :hover {
   opacity: 100%;
 }
-.series .carousel-container .glide__arrow--left {
+.keep-watching .carousel-container .glide__arrow--left {
   left: 0;
 }
-.series .carousel-container .glide__arrow--right {
+.keep-watching .carousel-container .glide__arrow--right {
   right: 0;
 }
-.series .carousel-container .series-carousel {
+.keep-watching .carousel-container .series-carousel {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
   scroll-behavior: smooth;
   padding: 20px 0;
 }
-.series .carousel-container .series-carousel .carousel-img {
+.keep-watching .carousel-container .series-carousel .carousel-img {
   margin-right: 5px;
   min-width: 20%;
-}
-
-.keep-watching {
-  padding: 10px;
-  margin-left: 50px;
-  color: #fff;
 }
 
 .recent-add {
