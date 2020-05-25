@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  background-color: #000;
-}
-
 .carousel-container {
   position: relative;
   display: flex;
@@ -120,15 +108,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.series {
-  margin: 0 25px;
-  padding: 10px;
-  color: #fff;
-}
-.series .title {
-  margin: 20px 0px;
-}
-
 .keep-watching {
   padding: 10px;
   margin: 0 25px;
@@ -213,6 +192,27 @@ body {
   width: 45%;
   height: 10px;
   background-color: #C60F0E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #000;
+}
+
+.series {
+  margin: 0 25px;
+  padding: 10px;
+  color: #fff;
+}
+.series .title {
+  margin: 20px 0px;
 }
 
 .recent-add {
