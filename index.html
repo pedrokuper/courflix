@@ -18,16 +18,16 @@
     <nav class="nav-bar">
       <ul class="nav-bar-list">
         <li>
-          <a href="" class="nav-link">Inicio</a>
+          <a href="#inicio" class="nav-link">Inicio</a>
         </li>
         <li>
-          <a class="nav-link" href="">Series</a>
+          <a class="nav-link" href="#series">Series</a>
         </li>
         <li>
           <a href="" class="nav-link">Películas</a>
         </li>
         <li>
-          <a href="" class="nav-link">Agregados Recientemente</a>
+          <a href="#recent-add" class="nav-link">Agregados Recientemente</a>
         </li>
         <li>
           <a href="" class="nav-link">Mi lista</a>
@@ -35,7 +35,7 @@
       </ul>
     </nav>
   </header>
-  <section class="hero">
+  <section class="hero" id="inicio">
     <div class="content">
       <h2 class="hero-subtitle">Original de COURFLIX</h2>
       <h1 class="hero-title">BLACK SUMMER</h1>
@@ -52,7 +52,7 @@
       </div>
     </div>
   </section>
-  <section class="series">
+  <section class="series" id="series">
     <h3 class="title">Series</h3>
     <div class="carousel-container">
       <div class="glide carousels">
@@ -110,6 +110,82 @@
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide">
+              <img src="/assets/img/series-cover/vikingos.jpg" alt="" />
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/img/series-cover/dark.jpg" alt="" />
+              <div class="progress-bar2">
+                <div class="progress2"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/img/series-cover/la-orden-secretra.jpg" alt="" />
+              <div class="progress-bar3">
+                <div class="progress3"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/img/series-cover/the-end-of-the-f.jpg" alt="" />
+              <div class="progress-bar4">
+                <div class="progress4"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
+              <div class="progress-bar5">
+                <div class="progress5"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/img/series-cover/mindhunter.png" alt="" />
+              <div class="progress-bar6">
+                <div class="progress6"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/img/series-cover/pulp-fiction.png" alt="" />
+              <div class="progress-bar7">
+                <div class="progress7"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/img/series-cover/arrow.png" alt="" />
+              <div class="progress-bar8">
+                <div class="progress8"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <img src="/assets/img/series-cover/better-call-saul.png" alt="" />
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+              class="fas fa-angle-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="recent-add series" id="recent-add">
+
+    <h3 class="title">Agregados recientemente</h3>
+
+    <div class="carousel-container">
+      <div class="glide carousels">
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
+
+        </div>
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+
+            <li class="glide__slide">
               <img src="/assets/img/series-cover/dark.jpg" alt="" />
             </li>
             <li class="glide__slide">
@@ -143,23 +219,9 @@
               class="fas fa-angle-right"></i></button>
         </div>
       </div>
-
-
-
-
-
     </div>
   </section>
-  <section class="recent-add">
-    <h3>Agregados recientemente</h3>
-    <div class="recent-add-carousel">
-      <img src="/assets/img/series-cover/arrow.png" alt="" />
-      <img src="/assets/img/series-cover/flash.png" alt="" />
-      <img src="/assets/img/series-cover/flash.png" alt="" />
-      <img src="/assets/img/series-cover/flash.png" alt="" />
-    </div>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="/js/glidejs.js"></script>
   <script src="/js/index.js"></script>
 </body>
 
