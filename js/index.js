@@ -17,3 +17,20 @@ Object.values(carousels).map(carousel => {
   });
   slider.mount();
 });
+
+
+
+/*
+Try this code, it will work as your wish.
+
+On 1st Page store data into localStorage variable
+
+var page_content = document.getElementById("parent1").innerHTML;
+console.log( page_content );
+localStorage.setItem("page_content", page_content );
+Retrieve 1st page data on 2nd page
+
+document.getElementById("parent2").innerHTML = localStorage.getItem("page_content");
+console.log( page_content );
+Open console for confirmation data storing successfully on 1st page.
+*/
