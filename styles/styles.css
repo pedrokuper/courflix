@@ -80,12 +80,12 @@ body {
   background-size: cover;
   height: 100vh;
   color: #fff;
-  margin-bottom: -250px;
+  margin-bottom: -100px;
 }
 .hero .content {
   width: 100%;
   max-width: 600px;
-  margin: 0 25px;
+  margin: 100px 25px;
 }
 .hero .content .hero-title {
   font-weight: 700;
