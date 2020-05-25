@@ -1,14 +1,19 @@
-const leftArrow = document.querySelector(".left-arrow");
-const rightArrow = document.querySelector(".right-arrow");
-const series = document.querySelector(".series-carousel");
+const carousels = document.querySelectorAll(".carousels");
 
+Object.values(carousels).map(carousel => {
+  const slider = new Glide(carousel, {
+    type: "carousel",
+    perView: 5,
+    gap: 10,
+    breakpoints: {
+      800: {
+        perView: 2
+      },
+      480: {
+        perView: 1
+      }
+    }
 
-rightArrow.addEventListener("click", () => {
-
-    series.scrollLeft += series.offsetWidth;
-
-})
-
-leftArrow.addEventListener("click", () => {
-    series.scrollLeft -= series.offsetWidth;
-})
+  });
+  slider.mount();
+});

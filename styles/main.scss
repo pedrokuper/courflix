@@ -18,17 +18,85 @@ $margin-general: 50px;
 @use "fonts";
 
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: $black;
+    
 }
+
+
+
+
+
+.carousel-container {
+    position: relative;
+    display: flex;
+
+    .glide__arrow--left,
+    .glide__arrow--right {
+        position: absolute;
+        border: none;
+        color: white;
+        background-color: rgb(0, 0, 0, 0.3);
+        font-size: 1.5rem;
+        height: 20%;
+        top: calc(60% - 20%);
+        //line-height: 20px;
+        width: 40px;
+        cursor: pointer;
+        z-index: 500;
+        transition: .2s ease all;
+        opacity: 0;
+    }
+
+    & :hover {
+        opacity: 100%;
+    }
+
+
+    .glide__arrow--left {
+
+        left: 0;
+    }
+
+
+    .glide__arrow--right {
+        right: 0;
+    }
+
+
+
+    .series-carousel {
+
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        padding: 20px 0;
+
+
+        .carousel-img {
+            margin-right: 5px;
+            min-width: 20%;
+
+        }
+
+
+
+    }
+
+
+}
+
+
+
 
 .header {
     display: flex;
@@ -60,15 +128,14 @@ body {
     background-image: url(/assets/img/bg-cover/netflix-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-
     height: 100vh;
     color: $white;
-    margin-bottom: 10px;
+    margin-bottom: -250px;
 
     .content {
         width: 100%;
         max-width: 600px;
-        margin: 150px $margin-general;
+        margin: 0 25px ;
 
 
         .hero-title {
@@ -117,89 +184,137 @@ body {
 
 }
 
+
+
+
 .series {
 
-    margin: 0 5px;
+    margin: 0 25px ;
     padding: $padding-general;
-    margin-left: $margin-general;
     color: $white;
 
     .title {
-        margin: 10px 0px;
+        margin: 20px 0px;
     }
 
-    .carousel-wrapper {
-        position: relative;
-        display: flex;
 
-        .left-arrow,
-        .right-arrow {
-            position: absolute;
-            border: none;
-            color: white;
-            background-color: rgb(0, 0, 0, 0.3);
-            font-size: 1.5rem;
-            height: 20%;
-            top: calc(60% - 20%);
-            //line-height: 20px;
-            width: 40px;
-            cursor: pointer;
-            z-index: 500;
-            transition: .2s ease all;
-            opacity: 0;
-        }
-
-        & :hover {
-            opacity: 100%;
-        }
-
-
-        .left-arrow {
-
-            left: 0;
-        }
-
-
-        .right-arrow {
-            right: 0;
-        }
-
-
-
-        .series-carousel {
-
-            display: flex;
-            flex-wrap: nowrap;
-            overflow: hidden;
-            scroll-behavior: smooth;
-            padding: 20px 0;
-
-
-            .carousel-img {
-                margin-right: 5px;
-                min-width: 20%;
-
-            }
-
-            // & :hover {
-            //     transition: 500ms ease-out;
-            //     transform: scale(1.1);
-            // }
-
-        }
-
-
-    }
 }
 
 .keep-watching {
+
+
     padding: $padding-general;
-    margin-left: $margin-general;
+    margin: 0 25px ;
     color: $white;
+
+    .title {
+        margin: 20px 0px;
+    }
+
+    .progress-bar {
+        margin: auto;
+        width: 50%;
+        height: 10px;
+        background-color: #333;
+
+        .progress {
+            width: 96%;
+            height: 10px;
+            background-color: #C60F0E;
+        }
+    }
+
+    .progress-bar2 {
+        margin: auto;
+        width: 50%;
+        height: 10px;
+        background-color: #333;
+
+        .progress2 {
+            width: 45%;
+            height: 10px;
+            background-color: #C60F0E;
+        }
+    }
+
+    .progress-bar3 {
+        margin: auto;
+        width: 50%;
+        height: 10px;
+        background-color: #333;
+
+        .progress3 {
+            width: 15%;
+            height: 10px;
+            background-color: #C60F0E;
+        }
+    }
+
+    .progress-bar4 {
+        margin: auto;
+        width: 50%;
+        height: 10px;
+        background-color: #333;
+
+        .progress4 {
+            width: 45%;
+            height: 10px;
+            background-color: #C60F0E;
+        }
+    }
+
+    .progress-bar5 {
+        margin: auto;
+        width: 50%;
+        height: 10px;
+        background-color: #333;
+
+        .progress5 {
+            width: 85%;
+            height: 10px;
+            background-color: #C60F0E;
+        }
+    }
+
+    .progress-bar6 {
+        margin: auto;
+        width: 50%;
+        height: 10px;
+        background-color: #333;
+
+        .progress6 {
+            width: 45%;
+            height: 10px;
+            background-color: #C60F0E;
+        }
+    }
+
+    .progress-bar7 {
+        margin: auto;
+        width: 50%;
+        height: 10px;
+        background-color: #333;
+
+        .progress7 {
+            width: 45%;
+            height: 10px;
+            background-color: #C60F0E;
+        }
+    }
+
+
+
 }
 
 .recent-add {
+    
     padding: $padding-general;
-    margin-left: $margin-general;
+    margin: 0 25px ;
     color: $white;
+
+    .title {
+        margin: 20px 0px;
+    }
+
+    
 }
