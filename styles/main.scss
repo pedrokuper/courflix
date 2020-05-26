@@ -4,6 +4,7 @@
 @use "header";
 @use "hero";
 @use 'keep-watching';
+@use "series-info";
 //PALETA DE COLORES 
 
 //Botones
@@ -36,11 +37,6 @@ body {
     background-color: $black;
 
 }
-
-
-
-
-
 
 
 .series {

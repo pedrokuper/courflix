@@ -20,12 +20,14 @@ $margin-general: 50px;
     height: 100vh;
     color: $white;
     margin-bottom: -100px;
+    display: none;
 
     .content {
+
         width: 100%;
         max-width: 600px;
         margin: 100px 25px;
-
+        
 
         .hero-title {
             font-weight: 700;

@@ -70,6 +70,7 @@
   height: 100vh;
   color: #fff;
   margin-bottom: -100px;
+  display: none;
 }
 .hero .content {
   width: 100%;
@@ -192,6 +193,65 @@
   width: 45%;
   height: 10px;
   background-color: #C60F0E;
+}
+
+.serie-preview {
+  padding: 10px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(170, 170, 170, 0.11)), url(/assets/img/breaking-bad/breakingbad-cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  margin: 0 25px;
+}
+.serie-preview .breaking-bad-logo {
+  margin-top: 50px;
+}
+.serie-preview .serie-info {
+  display: flex;
+  align-items: center;
+  margin: 0 25px;
+  width: 100%;
+  max-width: 600px;
+  margin: 100px 25px;
+}
+.serie-preview .serie-info .match-percentage {
+  color: #009C04;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.serie-preview .serie-info .data {
+  margin-right: 20px;
+}
+.serie-preview .serie-buttons {
+  margin: 0 25px;
+}
+.serie-preview .serie-buttons .hero-button-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.serie-preview .serie-buttons .play,
+.serie-preview .serie-buttons .my-list {
+  border-radius: 9px;
+  margin-right: 20px;
+  background-color: rgba(157, 151, 151, 0.541521);
+  padding: 20px 80px;
+  font-size: 400;
+}
+.serie-preview .serie-buttons .play {
+  background-color: red;
+}
+.serie-preview .description {
+  margin: 20px 0px 0px 25px;
+  width: 100%;
+  max-width: 600px;
+  font-weight: 500;
+  line-height: 36px;
+  font-size: 1.4rem;
 }
 
 * {
