@@ -188,12 +188,12 @@
 
 .serie-preview {
   padding: 10px;
-  background-image: linear-gradient(90deg, black, rgba(170, 170, 170, 0.11)), url(/assets/img/breaking-bad/breakingbad-cover.png);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.884), rgba(170, 170, 170, 0.11)), url(/assets/img/breaking-bad/breakingbad-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   color: #fff;
-  margin: 0 25px;
+  margin-left: 25px;
 }
 .serie-preview .breaking-bad-logo {
   margin-top: 50px;
@@ -208,7 +208,7 @@
   margin: 10px 25px;
 }
 .serie-preview .serie-info .match-percentage {
-  color: #009C04;
+  color: #009c04;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -255,6 +255,10 @@
   font-weight: 500;
   line-height: 36px;
   font-size: 1.4rem;
+}
+.serie-preview .title {
+  margin-top: 100px;
+  margin-left: 25px;
 }
 
 .carousel-img {

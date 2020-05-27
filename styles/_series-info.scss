@@ -1,27 +1,28 @@
 //Botones
 $gray: rgba(157, 151, 151, 0.541521);
-$red : #ED0A1D;
+$red: #ed0a1d;
 //Pantalla de detalles
-$green: #009C04;
+$green: #009c04;
 // Textos
-$white : #fff;
-//Backgrounds 
+$white: #fff;
+//Backgrounds
 $black: #000;
 
 //Padding
-$padding-general : 10px;
+$padding-general: 10px;
 $margin-general: 50px;
 
 .serie-preview {
     padding: $padding-general;
-    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(170, 170, 170, 0.11)), url(/assets/img/breaking-bad/breakingbad-cover.png);
+    background-image: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.884),
+            rgba(170, 170, 170, 0.11)),
+        url(/assets/img/breaking-bad/breakingbad-cover.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     color: $white;
-    margin: 0 25px;
-
-
+    margin-left: 25px;
 
     .breaking-bad-logo {
         margin-top: 50px;
@@ -40,7 +41,6 @@ $margin-general: 50px;
             color: $green;
             font-size: 1.2rem;
             font-weight: 600;
-
         }
 
         .data {
@@ -62,7 +62,6 @@ $margin-general: 50px;
 
         .play,
         .my-list {
-
             border-radius: 9px;
             margin-right: 20px;
             background-color: $gray;
@@ -86,7 +85,6 @@ $margin-general: 50px;
         .far {
             font-size: 2rem;
         }
-
     }
 
     .description {
@@ -97,10 +95,15 @@ $margin-general: 50px;
         line-height: 36px;
         font-size: 1.4rem;
     }
+
+    .title {
+        margin-top: 100px;
+        margin-left: 25px;
+    }
 }
 
+.carousel-img {
 
-    .carousel-img {
-        width: 300px;
-        height: auto;
-    }
+    width: 300px;
+    height: auto;
+}

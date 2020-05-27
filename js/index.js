@@ -4,7 +4,7 @@ Object.values(carousels).map(carousel => {
     const slider = new Glide(carousel, {
         type: "carousel",
         perView: 5,
-        gap: 10,
+        gap: 20,
         
         breakpoints: {
             800: {
