@@ -2,6 +2,7 @@
 .carousel-container {
   position: relative;
   display: flex;
+  margin: 10px 25px;
 }
 .carousel-container .glide__arrow--left,
 .carousel-container .glide__arrow--right {
@@ -26,17 +27,6 @@
 }
 .carousel-container .glide__arrow--right {
   right: 0;
-}
-.carousel-container .series-carousel {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  scroll-behavior: smooth;
-  padding: 20px 0;
-}
-.carousel-container .series-carousel .carousel-img {
-  margin-right: 5px;
-  min-width: 20%;
 }
 
 .header {
@@ -70,12 +60,13 @@
   height: 100vh;
   color: #fff;
   margin-bottom: -100px;
-  display: none;
+  padding: 20px;
 }
 .hero .content {
   width: 100%;
   max-width: 600px;
   margin: 100px 25px;
+  padding: 20px 0;
 }
 .hero .content .hero-title {
   font-weight: 700;
@@ -197,7 +188,7 @@
 
 .serie-preview {
   padding: 10px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(170, 170, 170, 0.11)), url(/assets/img/breaking-bad/breakingbad-cover.png);
+  background-image: linear-gradient(90deg, black, rgba(170, 170, 170, 0.11)), url(/assets/img/breaking-bad/breakingbad-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -206,6 +197,7 @@
 }
 .serie-preview .breaking-bad-logo {
   margin-top: 50px;
+  margin-left: 25px;
 }
 .serie-preview .serie-info {
   display: flex;
@@ -213,7 +205,7 @@
   margin: 0 25px;
   width: 100%;
   max-width: 600px;
-  margin: 100px 25px;
+  margin: 10px 25px;
 }
 .serie-preview .serie-info .match-percentage {
   color: #009C04;
@@ -245,6 +237,17 @@
 .serie-preview .serie-buttons .play {
   background-color: red;
 }
+.serie-preview .serie-buttons .button {
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white;
+  background: none;
+  padding: 15px;
+  margin-right: 10px;
+}
+.serie-preview .serie-buttons .far {
+  font-size: 2rem;
+}
 .serie-preview .description {
   margin: 20px 0px 0px 25px;
   width: 100%;
@@ -252,6 +255,11 @@
   font-weight: 500;
   line-height: 36px;
   font-size: 1.4rem;
+}
+
+.carousel-img {
+  width: 300px;
+  height: auto;
 }
 
 * {
@@ -272,7 +280,7 @@ body {
   color: #fff;
 }
 .series .title {
-  margin: 20px 0px;
+  margin: 0 25px;
 }
 
 .recent-add {
@@ -281,7 +289,7 @@ body {
   color: #fff;
 }
 .recent-add .title {
-  margin: 20px 0px;
+  margin: 0 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */

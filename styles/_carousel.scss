@@ -1,6 +1,7 @@
 .carousel-container {
     position: relative;
     display: flex;
+    margin: 10px 25px;
 
     .glide__arrow--left,
     .glide__arrow--right {
@@ -36,24 +37,7 @@
 
 
 
-    .series-carousel {
 
-        display: flex;
-        flex-wrap: nowrap;
-        overflow: hidden;
-        scroll-behavior: smooth;
-        padding: 20px 0;
-
-
-        .carousel-img {
-            margin-right: 5px;
-            min-width: 20%;
-
-        }
-
-
-
-    }
 
 
 }
