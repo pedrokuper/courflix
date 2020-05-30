@@ -1,239 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courflix</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/glide/glide.core.min.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="icon" href="/assets/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Courflix</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-  <link rel="stylesheet" href="/styles/glide/glide.core.min.css" />
-  <link rel="stylesheet" href="/styles/styles.css" />
-  <link rel="icon" href="/assets/favicon.ico" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="burger-menu"><i class="fas fa-bars"></i></div>
-    <div class="logo">
-      <a href="#inicio"><img src="/assets/img/logo/courseflix.png" alt="Courflix logo" /></a>
-    </div>
-
-    <nav class="nav-bar">
-
-      <ul class="nav-bar-list">
-        <li class="link-container">
-          <a href="#inicio" class="nav-link">Inicio</a>
-
-        </li>
-        <li class="link-container">
-          <a class="nav-link" href="#series">Series</a>
-        </li>
-        <li class="link-container">
-          <a href="" class="nav-link">Películas</a>
-        </li>
-        <li class="link-container">
-          <a href="#recent-add" class="nav-link">Agregados recientemente</a>
-        </li>
-        <li class="link-container">
-          <a href="/breaking-bad.html" class="nav-link">Mi lista</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero" id="inicio">
-    <div class="content">
-      <h2 class="hero-subtitle">Original de COURFLIX</h2>
-      <h1 class="hero-title">BLACK SUMMER</h1>
-      <div class="hero-buttons">
-        <a href="" class="hero-button-link play">Reproducir</a>
-        <a href="" class="hero-button-link my-list">+ Mi lista</a>
+  <body>
+    <header class="header">
+      <div class="burger-menu"><i class="fas fa-bars"></i></div>
+      <div class="logo">
+        <a href="#inicio"
+          ><img src="/assets/img/logo/courseflix.png" alt="Courflix logo"
+        /></a>
       </div>
-      <div class="hero-description">
-        <p class="hero-text">Ve la temporada 1</p>
-        <p class="hero-description">
-          Una ansiada luna de miel. Un asesinato terrible.Varios sospechosos.
-          Si sobreviven, serán unas vacaciones de ensueño.
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <section class="series" id="series">
-    <h3 class="title">Series</h3>
-    <div class="carousel-container">
-      <div class="glide carousels">
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-            <i class="fas fa-angle-left"></i>
-          </button>
+      <nav class="nav-bar">
+        <ul class="nav-bar-list">
+          <li class="link-container">
+            <a href="#inicio" class="nav-link">Inicio</a>
+          </li>
+          <li class="link-container">
+            <a class="nav-link" href="#series">Series</a>
+          </li>
+          <li class="link-container">
+            <a href="" class="nav-link">Películas</a>
+          </li>
+          <li class="link-container">
+            <a href="#recent-add" class="nav-link">Agregados recientemente</a>
+          </li>
+          <li class="link-container">
+            <a href="/breaking-bad.html" class="nav-link">Mi lista</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+      <div class="content">
+        <h2 class="hero-subtitle">Original de COURFLIX</h2>
+        <h1 class="hero-title">BLACK SUMMER</h1>
+        <div class="hero-buttons">
+          <a href="" class="hero-button-link play">Reproducir</a>
+          <a href="" class="hero-button-link my-list">+ Mi lista</a>
         </div>
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/the-seven-deadly-sins.jpg" class="carousel-img"
-                alt="Seven deadly sins" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/lucifer.jpg" class="carousel-img" alt="Lucifer" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/the-protector.jpg" class="carousel-img" class="carousel-img"
-                alt="The Protector" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/la-orden-secretra.jpg" class="carousel-img" alt="La orden secreta" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/love-death-robots.jpg" class="carousel-img" alt="Love death robots" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/the-end-of-the-f.jpg" class="carousel-img"
-                alt="The end of the fucking world" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/iron-fist.jpg" class="carousel-img" alt="Iron Fist" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/rick-and-morty.jpg" class="carousel-img" alt="Love death robots" />
-            </li>
-          </ul>
-        </div>
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-            <i class="fas fa-angle-right"></i>
-          </button>
+        <div class="hero-description">
+          <p class="hero-text">Ve la temporada 1</p>
+          <p class="hero-description">
+            Una ansiada luna de miel. Un asesinato terrible.Varios sospechosos.
+            Si sobreviven, serán unas vacaciones de ensueño.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="keep-watching series">
-    <h3 class="title">Seguir viendo contenido de Pedro</h3>
-    <div class="carousel-container">
-      <div class="glide carousels">
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-            <i class="fas fa-angle-left"></i>
-          </button>
-        </div>
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/vikingos.jpg" alt="" />
-              <div class="progress-bar">
-                <div class="progress"></div>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/dark.jpg" alt="" />
-              <div class="progress-bar2">
-                <div class="progress2"></div>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/la-orden-secretra.jpg" alt="" />
-              <div class="progress-bar3">
-                <div class="progress3"></div>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/the-end-of-the-f.jpg" alt="" />
-              <div class="progress-bar4">
-                <div class="progress4"></div>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
-              <div class="progress-bar5">
-                <div class="progress5"></div>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/mindhunter.png" alt="" />
-              <div class="progress-bar6">
-                <div class="progress6"></div>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/pulp-fiction.png" alt="" />
-              <div class="progress-bar7">
-                <div class="progress7"></div>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/arrow.png" alt="" />
-              <div class="progress-bar8">
-                <div class="progress8"></div>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/better-call-saul.png" alt="" />
-              <div class="progress-bar">
-                <div class="progress"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-            <i class="fas fa-angle-right"></i>
-          </button>
+    </section>
+
+    <section class="series" id="series">
+      <h3 class="title">Series</h3>
+      <div class="carousel-container">
+        <div class="glide carousels">
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="fas fa-angle-left"></i>
+            </button>
+          </div>
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/the-seven-deadly-sins.jpg"
+                  class="carousel-img"
+                  alt="Seven deadly sins"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/lucifer.jpg"
+                  class="carousel-img"
+                  alt="Lucifer"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/the-protector.jpg"
+                  class="carousel-img"
+                  class="carousel-img"
+                  alt="The Protector"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/la-orden-secretra.jpg"
+                  class="carousel-img"
+                  alt="La orden secreta"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/love-death-robots.jpg"
+                  class="carousel-img"
+                  alt="Love death robots"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/the-end-of-the-f.jpg"
+                  class="carousel-img"
+                  alt="The end of the fucking world"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/iron-fist.jpg"
+                  class="carousel-img"
+                  alt="Iron Fist"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/rick-and-morty.jpg"
+                  class="carousel-img"
+                  alt="Love death robots"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="fas fa-angle-right"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="recent-add series" id="recent-add">
-    <h3 class="title">Agregados recientemente</h3>
-
-    <div class="carousel-container">
-      <div class="glide carousels">
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-            <i class="fas fa-angle-left"></i>
-          </button>
-        </div>
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/dark.jpg" alt="" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/mindhunter.png" alt="" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/pulp-fiction.png" alt="" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/better-call-saul.png" alt="" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
-            </li>
-            <li class="glide__slide">
-              <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
-            </li>
-          </ul>
-        </div>
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-            <i class="fas fa-angle-right"></i>
-          </button>
+    </section>
+    <section class="keep-watching series">
+      <h3 class="title">Seguir viendo contenido de Pedro</h3>
+      <div class="carousel-container">
+        <div class="glide carousels">
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="fas fa-angle-left"></i>
+            </button>
+          </div>
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/vikingos.jpg" alt="" />
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/dark.jpg" alt="" />
+                <div class="progress-bar2">
+                  <div class="progress2"></div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/la-orden-secretra.jpg"
+                  alt=""
+                />
+                <div class="progress-bar3">
+                  <div class="progress3"></div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/the-end-of-the-f.jpg"
+                  alt=""
+                />
+                <div class="progress-bar4">
+                  <div class="progress4"></div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
+                <div class="progress-bar5">
+                  <div class="progress5"></div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/mindhunter.png" alt="" />
+                <div class="progress-bar6">
+                  <div class="progress6"></div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/pulp-fiction.png" alt="" />
+                <div class="progress-bar7">
+                  <div class="progress7"></div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/arrow.png" alt="" />
+                <div class="progress-bar8">
+                  <div class="progress8"></div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/better-call-saul.png"
+                  alt=""
+                />
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="fas fa-angle-right"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="recent-add series" id="recent-add">
+      <h3 class="title">Agregados recientemente</h3>
 
-  <script src="/js/glidejs.js"></script>
-  <script src="/js/index.js"></script>
-</body>
+      <div class="carousel-container">
+        <div class="glide carousels">
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="fas fa-angle-left"></i>
+            </button>
+          </div>
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/dark.jpg" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/mindhunter.png" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/pulp-fiction.png" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="/assets/img/series-cover/better-call-saul.png"
+                  alt=""
+                />
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/assets/img/series-cover/rick-and-morty.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="fas fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <script src="/js/glidejs.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
 </html>
