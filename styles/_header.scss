@@ -11,28 +11,135 @@ $black: #000;
 $padding-general : 10px;
 $margin-general: 50px;
 
+
+//BREAKPOINTS//
+
+$tablet: 1000px;
+$mobile: 360px;
+
 .header {
+    position: relative;
     display: flex;
+    align-items: center;
     width: 100vw;
     position: fixed;
     z-index: 1;
     padding: $padding-general;
     background-color: rgba(0, 0, 0, 0.85);
 
-    .logo {
-        margin: 0 $margin-general;
+    @media screen and (max-width: $tablet) {
+        background-color: #000;
     }
 
-    .nav-bar-list {
-        display: flex;
-        list-style-type: none;
+    @media screen and (max-width: $mobile) {
+        background-color: #000;
+    }
 
-        .nav-link {
-            color: $white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 1.4rem;
-            font-weight: 600;
+    .burger-menu {
+        color: white;
+        font-size: 3.5rem;
+        margin-left: 15px;
+        display: none;
+
+        @media screen and (max-width: $tablet) {
+            display: block;
         }
     }
+
+    .logo {
+        margin: 0 25px;
+    }
+
+    .nav-bar {
+
+        @media screen and (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 90px;
+            padding: 10px;
+            background-color: #000;
+            height: 100vh;
+            min-width: 200px;
+
+        }
+
+        @media screen and (max-width: $mobile) {
+            display: flex;
+
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            background-color: #000;
+            height: 100vh;
+            width: 120px;
+
+
+
+        }
+
+        .nav-bar-list {
+
+            display: flex;
+            list-style-type: none;
+            margin-left: 15px;
+
+            .link-container {
+
+                @media screen and (max-width: $mobile) {
+
+                    margin: 15px 0;
+
+
+                }
+            }
+
+
+
+            @media screen and (max-width: $tablet) {
+                text-align: left;
+                flex-direction: column;
+                line-height: 4rem;
+            }
+
+            @media screen and (max-width: $mobile) {
+
+                flex-direction: column;
+                line-height: 2rem;
+
+
+            }
+
+
+            .nav-link {
+                color: $white;
+                text-decoration: none;
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin-left: 30px;
+
+                @media screen and (max-width: $tablet) {
+                    margin-left: 0px;
+                    line-height: 2px;
+                    margin-top: 50px;
+
+                }
+
+                @media screen and (max-width: $mobile) {
+                    margin-bottom: 330px;
+                    line-height: 0.5rem;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+
+
+
+
 }
