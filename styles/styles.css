@@ -57,7 +57,7 @@
   background-image: url(/assets/img/bg-cover/netflix-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   color: #fff;
   margin-bottom: -100px;
   padding: 20px;
@@ -101,7 +101,6 @@
 }
 
 .keep-watching {
-  padding: 10px;
   margin: 0 25px;
   color: #fff;
 }
@@ -275,7 +274,6 @@ body {
 
 .series {
   margin: 0 25px;
-  padding: 10px;
   color: #fff;
 }
 .series .title {
@@ -283,7 +281,6 @@ body {
 }
 
 .recent-add {
-  padding: 10px;
   margin: 0 25px;
   color: #fff;
 }
