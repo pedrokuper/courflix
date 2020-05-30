@@ -42,12 +42,17 @@ $mobile: 360px;
         display: none;
 
         @media screen and (max-width: $tablet) {
+            transition: 0.3 ease-in;
             display: block;
         }
     }
 
     .logo {
-        margin: 0 25px;
+        margin: 10px 25px;
+
+        @media screen and (max-width: $tablet) {
+            margin: 0 45px;
+        }
     }
 
     .nav-bar {
