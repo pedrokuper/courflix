@@ -5,7 +5,7 @@ Object.values(carousels).map(carousel => {
         type: "carousel",
         perView: 5,
         gap: 20,
-        
+
         breakpoints: {
             800: {
                 perView: 2
@@ -16,8 +16,24 @@ Object.values(carousels).map(carousel => {
         }
 
     });
-    
-    
+
+
     slider.mount();
-    
+
 });
+
+
+const burgerMenu = document.querySelector(".burger-menu");
+
+const navBar = document.querySelector(".nav-bar");
+
+const displayBurgerMenu = () => {
+    if (navBar.style.display === "block") {
+        navBar.style.display = "none";
+    } else {
+        navBar.style.display = "block";
+    }
+
+}
+
+burgerMenu.onclick = displayBurgerMenu;
