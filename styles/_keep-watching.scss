@@ -14,17 +14,31 @@ $black: #000;
 $padding-general : 10px;
 $margin-general: 50px;
 
+//BREAKPOINTS
+ 
+$tablet: 1000px;
+$mobile: 360px;
 
 
 .keep-watching {
 
 
-  
+
     margin: 0 25px;
     color: $white;
 
-    .title {
+
+    @media screen and (max-width: $tablet) {
+        margin: 2.5rem 0;
+    }
+
+    .title-keep-watching {
         margin: 20px 0px;
+
+        @media screen and (max-width: $tablet) {
+            margin-left: 25px;;
+        }
+
     }
 
     .progress-bar {

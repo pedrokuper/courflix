@@ -19,7 +19,7 @@ $mobile: 360px;
 
 .header {
     position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     width: 100vw;
     position: fixed;
@@ -67,25 +67,22 @@ $mobile: 360px;
             margin-top: 90px;
             padding: 10px;
             background-color: #000;
-            height: 100vh;
+            min-height: 100vh;
             min-width: 200px;
 
         }
 
         @media screen and (max-width: $mobile) {
-            display: flex;
-
-
+            display: none;
+            flex-direction: column;
             position: absolute;
             top: 0;
             left: 0;
-
+            margin-top: 90px;
+            padding: 10px;
             background-color: #000;
-            height: 100vh;
-            width: 120px;
-
-
-
+            min-height: 100vh;
+            min-width: 200px;
         }
 
         .nav-bar-list {
@@ -143,9 +140,4 @@ $mobile: 360px;
             }
         }
     }
-
-
-
-
-
 }

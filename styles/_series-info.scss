@@ -12,6 +12,10 @@ $black: #000;
 $padding-general: 10px;
 $margin-general: 50px;
 
+
+$tablet: 1000px;
+$mobile: 360px;
+
 .serie-preview {
     padding: $padding-general;
     background-image: linear-gradient(90deg,
@@ -97,6 +101,8 @@ $margin-general: 50px;
     }
 
     .title {
+
+       
         margin-top: 100px;
         margin-left: 25px;
     }

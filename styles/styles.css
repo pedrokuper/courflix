@@ -19,6 +19,12 @@
   transition: 0.2s ease all;
   opacity: 0;
 }
+@media screen and (max-width: 1000px) {
+  .carousel-container .glide__arrow--left,
+.carousel-container .glide__arrow--right {
+    display: none;
+  }
+}
 .carousel-container :hover {
   opacity: 100%;
 }
@@ -31,7 +37,7 @@
 
 .header {
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   width: 100vw;
   position: fixed;
@@ -80,19 +86,22 @@
     margin-top: 90px;
     padding: 10px;
     background-color: #000;
-    height: 100vh;
+    min-height: 100vh;
     min-width: 200px;
   }
 }
 @media screen and (max-width: 360px) {
   .header .nav-bar {
-    display: flex;
+    display: none;
+    flex-direction: column;
     position: absolute;
     top: 0;
     left: 0;
+    margin-top: 90px;
+    padding: 10px;
     background-color: #000;
-    height: 100vh;
-    width: 120px;
+    min-height: 100vh;
+    min-width: 200px;
   }
 }
 .header .nav-bar .nav-bar-list {
@@ -150,19 +159,78 @@
   margin-bottom: -100px;
   padding: 20px;
 }
+@media screen and (max-width: 1000px) {
+  .hero {
+    height: 50vh;
+    background-size: contain, cover;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero {
+    height: 80vh;
+    background-size: cover;
+    background-position: -260px;
+  }
+}
 .hero .content {
   width: 100%;
   max-width: 600px;
   margin: 100px 25px;
   padding: 20px 0;
 }
+@media screen and (max-width: 1000px) {
+  .hero .content {
+    margin-top: 5rem;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero .content {
+    margin-top: 5rem;
+    margin-left: 0px;
+  }
+}
+.hero .content .hero-subtitle {
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 360px) {
+  .hero .content .hero-subtitle {
+    display: none;
+  }
+}
 .hero .content .hero-title {
   font-weight: 700;
   font-size: 9rem;
   line-height: 8rem;
 }
-.hero .content .hero-subtitle {
-  margin-bottom: 25px;
+@media screen and (max-width: 1000px) {
+  .hero .content .hero-title {
+    font-size: 5rem;
+    line-height: 4.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero .content .hero-title {
+    font-size: 2rem;
+    line-height: 4.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.hero .content .mobile-content {
+  display: none;
+}
+@media screen and (max-width: 360px) {
+  .hero .content .mobile-content {
+    margin-top: -30px;
+    font-weight: 400;
+    display: block;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero .content .hero-buttons {
+    display: flex;
+  }
 }
 .hero .content .hero-button-link {
   display: inline-block;
@@ -170,6 +238,12 @@
   color: #fff;
   text-decoration: none;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 360px) {
+  .hero .content .hero-button-link {
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
 }
 .hero .content .play,
 .hero .content .my-list {
@@ -179,21 +253,61 @@
   padding: 20px 80px;
   font-size: 400;
 }
+@media screen and (max-width: 360px) {
+  .hero .content .play,
+.hero .content .my-list {
+    min-width: 130px;
+    padding: 10px 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero .content .play {
+    background-color: #ED0A1D;
+  }
+}
 .hero .content .hero-description {
   line-height: 2rem;
   font-weight: 300;
   font-size: 1.4rem;
 }
+@media screen and (max-width: 1000px) {
+  .hero .content .hero-description {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero .content .hero-description {
+    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+}
 .hero .content .hero-description .hero-text {
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 1000px) {
+  .hero .content .hero-description .hero-text {
+    margin-bottom: 1rem;
+  }
 }
 
 .keep-watching {
   margin: 0 25px;
   color: #fff;
 }
-.keep-watching .title {
+@media screen and (max-width: 1000px) {
+  .keep-watching {
+    margin: 2.5rem 0;
+  }
+}
+.keep-watching .title-keep-watching {
   margin: 20px 0px;
+}
+@media screen and (max-width: 1000px) {
+  .keep-watching .title-keep-watching {
+    margin-left: 25px;
+  }
 }
 .keep-watching .progress-bar {
   margin: auto;
@@ -364,13 +478,29 @@ body {
   margin: 0 25px;
   color: #fff;
 }
-.series .title {
-  margin: 0 25px;
+@media screen and (max-width: 1000px) {
+  .series {
+    margin: 2.5rem 0;
+  }
+}
+.series .series-title {
+  margin: 20px 25px 0 25px;
+}
+@media screen and (max-width: 1000px) {
+  .series .series-title {
+    margin-top: 100px;
+    margin-left: 25px;
+  }
 }
 
 .recent-add {
   margin: 0 25px;
   color: #fff;
+}
+@media screen and (max-width: 1000px) {
+  .recent-add {
+    margin: 2.5rem 0;
+  }
 }
 .recent-add .title {
   margin: 0 25px;

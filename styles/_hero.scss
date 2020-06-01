@@ -12,33 +12,104 @@ $black: #000;
 $padding-general : 10px;
 $margin-general: 50px;
 
+//Breakpoints
+
+$tablet: 1000px;
+$mobile: 360px;
+
 .hero {
     padding: $padding-general;
     background-image: url(/assets/img/bg-cover/netflix-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height:90vh;
+    height: 90vh;
     color: $white;
     margin-bottom: -100px;
     padding: 20px;
+
+    @media screen and (max-width: $tablet) {
+        height: 50vh;
+        background-size: contain, cover;
+    }
+
+    @media screen and (max-width: $mobile) {
+        height: 80vh;
+        background-size: cover;
+        background-position: -260px;
+    }
 
     .content {
 
         width: 100%;
         max-width: 600px;
         margin: 100px 25px;
-         padding: 20px 0;
+        padding: 20px 0;
 
-        .hero-title {
-            font-weight: 700;
-            font-size: 9rem;
+        @media screen and (max-width: $tablet) {
+            margin-top: 5rem;
+            margin-left: 0px;
+        }
 
-            line-height: 8rem;
+        @media screen and (max-width: $mobile) {
+            margin-top: 5rem;
+            margin-left: 0px;
         }
 
         .hero-subtitle {
             margin-bottom: 25px;
+
+            @media screen and (max-width: $tablet) {}
+
+            @media screen and (max-width: $mobile) {
+                display: none;
+
+            }
         }
+
+        .hero-title {
+            font-weight: 700;
+            font-size: 9rem;
+            line-height: 8rem;
+
+            @media screen and (max-width: $tablet) {
+
+                font-size: 5rem;
+                line-height: 4.5rem;
+                margin-bottom: 1.5rem;
+
+
+            }
+
+
+
+            @media screen and (max-width: $mobile) {
+
+                font-size: 2rem;
+                line-height: 4.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+
+        }
+
+        .mobile-content {
+            display: none;
+
+            @media screen and (max-width: $mobile) {
+                margin-top: -30px;
+                font-weight: 400;
+                display: block;
+            }
+        }
+
+        .hero-buttons {
+
+            @media screen and (max-width: $mobile) {
+                display: flex;
+
+            }
+        }
+
 
         .hero-button-link {
 
@@ -47,6 +118,12 @@ $margin-general: 50px;
             color: $white;
             text-decoration: none;
             margin-bottom: 30px;
+
+            @media screen and (max-width: $mobile) {
+
+                flex-wrap: nowrap;
+                margin-bottom: 20px;
+            }
 
         }
 
@@ -57,6 +134,23 @@ $margin-general: 50px;
             background-color: $gray;
             padding: 20px 80px;
             font-size: 400;
+
+            @media screen and (max-width: $mobile) {
+
+                min-width: 130px;
+                padding: 10px 30px;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+
+
+
+        }
+
+        .play {
+            @media screen and (max-width: $mobile) {
+                background-color: $red;
+            }
         }
 
         .hero-description {
@@ -64,8 +158,23 @@ $margin-general: 50px;
             font-weight: 300;
             font-size: 1.4rem;
 
+            @media screen and (max-width: $tablet) {
+                margin-bottom: 1rem;
+            }
+
+            @media screen and (max-width: $mobile) {
+                font-size: 1.2rem;
+                font-size: 1.1rem;
+            }
+
+
+
             .hero-text {
                 margin-bottom: 1rem;
+
+                @media screen and (max-width: $tablet) {
+                    margin-bottom: 1rem;
+                }
             }
         }
     }
