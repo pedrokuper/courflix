@@ -1,185 +1,164 @@
 //Botones
 $gray: rgba(157, 151, 151, 0.541521);
-$red : #ED0A1D;
+$red: #ed0a1d;
 //Pantalla de detalles
-$green: #009C04;
+$green: #009c04;
 // Textos
-$white : #fff;
-//Backgrounds 
+$white: #fff;
+//Backgrounds
 $black: #000;
 
 //Padding
-$padding-general : 10px;
+$padding-general: 10px;
 $margin-general: 50px;
 
 //Breakpoints
 
-$tablet: 1000px;
-$mobile: 360px;
+// $tablet: 1000px;
+$mobile-min: 320px;
+$mobile-max: 639px;
+$tablet-min: 640px;
+$tablet-max: 1300px;
 
 .hero {
-    padding: $padding-general;
-    background-image: url(/assets/img/bg-cover/netflix-bg.png);
-    background-repeat: no-repeat;
+  padding: $padding-general;
+  background-image: url(/assets/img/bg-cover/netflix-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  color: $white;
+  margin-bottom: -100px;
+  padding: 20px;
+
+  
+
+  @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+    height: 100vh;
     background-size: cover;
-    height: 90vh;
-    color: $white;
-    margin-bottom: -100px;
-    padding: 20px;
 
-    @media screen and (max-width: $tablet) {
-        height: 50vh;
-        background-size: contain, cover;
+  }
+
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    height: 100vh;
+  }
+
+
+
+  .content {
+    width: 100%;
+    max-width: 750px;
+    margin-top: 100px;
+    padding: 20px 0;
+
+    
+
+    @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+      margin-top: 5rem;
+      margin-left: 0px;
     }
 
-    @media screen and (max-width: $mobile) {
-        height: 80vh;
-        background-size: cover;
-        background-position: -260px;
+    .hero-subtitle {
+      margin-bottom: 25px;
+
+    
+
+      @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+        display: none;
+      }
     }
 
-    .content {
+    .hero-title {
+      font-weight: 700;
+      font-size: 9rem;
+      line-height: 8rem;
 
-        width: 100%;
-        max-width: 600px;
-        margin: 100px 25px;
-        padding: 20px 0;
+      
+      @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+        font-size: 2rem;
+        line-height: 4.5rem;
+        margin-bottom: 1.5rem;
+      }
 
-        @media screen and (max-width: $tablet) {
-            margin-top: 5rem;
-            margin-left: 0px;
-        }
-
-        @media screen and (max-width: $mobile) {
-            margin-top: 5rem;
-            margin-left: 0px;
-        }
-
-        .hero-subtitle {
-            margin-bottom: 25px;
-
-            @media screen and (max-width: $tablet) {}
-
-            @media screen and (max-width: $mobile) {
-                display: none;
-
-            }
-        }
-
-        .hero-title {
-            font-weight: 700;
-            font-size: 9rem;
-            line-height: 8rem;
-
-            @media screen and (max-width: $tablet) {
-
-                font-size: 5rem;
-                line-height: 4.5rem;
-                margin-bottom: 1.5rem;
-
-
-            }
-
-
-
-            @media screen and (max-width: $mobile) {
-
-                font-size: 2rem;
-                line-height: 4.5rem;
-                margin-bottom: 1.5rem;
-            }
-
-
-        }
-
-        .mobile-content {
-            display: none;
-
-            @media screen and (max-width: $mobile) {
-                margin-top: -30px;
-                font-weight: 400;
-                display: block;
-            }
-        }
-
-        .hero-buttons {
-
-            @media screen and (max-width: $mobile) {
-                display: flex;
-
-            }
-        }
-
-
-        .hero-button-link {
-
-            display: inline-block;
-            margin-top: 20px;
-            color: $white;
-            text-decoration: none;
-            margin-bottom: 30px;
-
-            @media screen and (max-width: $mobile) {
-
-                flex-wrap: nowrap;
-                margin-bottom: 20px;
-            }
-
-        }
-
-        .play,
-        .my-list {
-            border-radius: 9px;
-            margin-right: 20px;
-            background-color: $gray;
-            padding: 20px 80px;
-            font-size: 400;
-
-            @media screen and (max-width: $mobile) {
-
-                min-width: 130px;
-                padding: 10px 30px;
-                flex-grow: 0;
-                flex-shrink: 0;
-            }
-
-
-
-        }
-
-        .play {
-            @media screen and (max-width: $mobile) {
-                background-color: $red;
-            }
-        }
-
-        .hero-description {
-            line-height: 2rem;
-            font-weight: 300;
-            font-size: 1.4rem;
-
-            @media screen and (max-width: $tablet) {
-                margin-bottom: 1rem;
-            }
-
-            @media screen and (max-width: $mobile) {
-                font-size: 1.2rem;
-                font-size: 1.1rem;
-            }
-
-
-
-            .hero-text {
-                margin-bottom: 1rem;
-
-                @media screen and (max-width: $tablet) {
-                    margin-bottom: 1rem;
-                }
-            }
-        }
+      @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-bottom: 1.5rem;
+      }
     }
 
+    .mobile-content {
+      display: none;
+
+      @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+        margin-top: -30px;
+        font-weight: 400;
+        display: block;
+      }
+    }
+
+    .hero-buttons {
+      @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+        display: flex;
+      }
+    }
+
+    .hero-button-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: $white;
+      text-decoration: none;
+      margin-bottom: 30px;
+
+      @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+      }
 
 
+    }
 
+    .play,
+    .my-list {
+      border-radius: 9px;
+      margin-right: 20px;
+      background-color: $gray;
+      padding: 20px 80px;
+      font-size: 400;
+
+      @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+        min-width: 130px;
+        padding: 10px 30px;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+
+
+    }
+
+    .play {
+      @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+        background-color: $red;
+      }
+    }
+
+    .hero-description {
+      line-height: 2rem;
+      font-weight: 300;
+      font-size: 1.4rem;
+
+      
+      @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+        font-size: 1.2rem;
+        line-height: 2.3rem;
+      }
+
+      .hero-text {
+        margin-bottom: 1rem;
+
+        // @media screen and (max-width: $tablet) {
+        //   margin-bottom: 1rem;
+        // }
+      }
+    }
+  }
 }
