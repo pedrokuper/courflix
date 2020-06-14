@@ -26,7 +26,9 @@ $margin-general: 50px;
 $mobile-min: 320px;
 $mobile-max: 639px;
 $tablet-min: 640px;
-$tablet-max: 1300px;
+$tablet-max: 1440px;
+$pc-min: 1441px;
+$px-max: 1900px;
 
 
 * {
@@ -46,7 +48,27 @@ body {
 
 .series {
 
-   
+    position: relative;
+
+    .series-nav-link {
+        border: transparent;
+        height: 50px;
+
+
+        @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+
+            height: 20px;
+        }
+
+        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+
+            height: 10px;
+
+        }
+
+    }
+
     color: $white;
 
     @media (min-width: $mobile-min) and (max-width: $mobile-max) {
@@ -66,8 +88,13 @@ body {
 
         margin: 20px 25px 0 25px;
 
+        @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+            margin: 70px 25px 0 25px;
+
+        }
+
         @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-            margin: 150px 25px 0 25px;
+            margin: 50px 25px 0 25px;
 
         }
     }
@@ -77,8 +104,25 @@ body {
 
 .recent-add {
 
+    .series-nav-link {
+        border: transparent;
+        height: 50px;
 
-   
+
+        @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+
+            height: 20px;
+        }
+
+        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+
+            height: 10px;
+
+        }
+
+    }
+
     color: $white;
 
     @media (min-width: $mobile-min) and (max-width: $mobile-max) {

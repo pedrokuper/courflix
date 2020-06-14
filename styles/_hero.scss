@@ -18,7 +18,10 @@ $margin-general: 50px;
 $mobile-min: 320px;
 $mobile-max: 639px;
 $tablet-min: 640px;
-$tablet-max: 1300px;
+$tablet-max: 1440px;
+$pc-min: 1441px;
+$pc-max: 1900px;
+
 
 .hero {
   padding: $padding-general;
@@ -30,16 +33,20 @@ $tablet-max: 1300px;
   margin-bottom: -100px;
   padding: 20px;
 
-  
+
 
   @media (min-width: $mobile-min) and (max-width: $mobile-max) {
-    height: 100vh;
+    height: 65vh;
     background-size: cover;
 
   }
 
   @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-    height: 100vh;
+    height: 70vh;
+  }
+
+  @media (min-width: $pc-min) and (max-width: $pc-max) {
+    //height: 100vh;
   }
 
 
@@ -50,7 +57,7 @@ $tablet-max: 1300px;
     margin-top: 100px;
     padding: 20px 0;
 
-    
+
 
     @media (min-width: $mobile-min) and (max-width: $mobile-max) {
       margin-top: 5rem;
@@ -60,7 +67,7 @@ $tablet-max: 1300px;
     .hero-subtitle {
       margin-bottom: 25px;
 
-    
+
 
       @media (min-width: $mobile-min) and (max-width: $mobile-max) {
         display: none;
@@ -72,7 +79,7 @@ $tablet-max: 1300px;
       font-size: 9rem;
       line-height: 8rem;
 
-      
+
       @media (min-width: $mobile-min) and (max-width: $mobile-max) {
         font-size: 2rem;
         line-height: 4.5rem;
@@ -146,10 +153,17 @@ $tablet-max: 1300px;
       font-weight: 300;
       font-size: 1.4rem;
 
-      
+
       @media (min-width: $mobile-min) and (max-width: $mobile-max) {
         font-size: 1.2rem;
         line-height: 2.3rem;
+        margin-bottom: 50px;
+      }
+
+      @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        font-size: 1.2rem;
+        line-height: 2.3rem;
+        margin-bottom: 100px;
       }
 
       .hero-text {
