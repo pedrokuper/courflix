@@ -25,11 +25,14 @@ $margin-general: 50px;
 //FALTA PC
 $mobile-min: 320px;
 $mobile-max: 639px;
+$mobile-small-min-height: 360px;
+$mobile-small-max-height: 540px;
 $tablet-min: 640px;
 $tablet-max: 1440px;
 $pc-min: 1441px;
 $px-max: 1900px;
-
+$pc-height-min: 480px;
+$pc-height-max: 1200px;
 
 * {
     margin: 0;
@@ -57,13 +60,13 @@ body {
 
         @media (min-width: $mobile-min) and (max-width: $mobile-max) {
 
-            height: 20px;
+            height: 90px;
         }
 
         @media (min-width: $tablet-min) and (max-width: $tablet-max) {
 
 
-            height: 10px;
+            height: 30px;
 
         }
 
@@ -71,8 +74,10 @@ body {
 
     color: $white;
 
+
+
     @media (min-width: $mobile-min) and (max-width: $mobile-max) {
-        margin: 0.5rem 0 0 0;
+        margin: 1rem 0 0 0;
     }
 
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
@@ -80,7 +85,7 @@ body {
     }
 
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-        margin: 2.5rem 0;
+        margin: 1.5rem 0;
     }
 
 
@@ -88,15 +93,27 @@ body {
 
         margin: 20px 25px 0 25px;
 
-        @media (min-width: $mobile-min) and (max-width: $mobile-max) {
-            margin: 70px 25px 0 25px;
+        @media (min-height: $pc-height-min) and (max-height: $pc-height-max) {
+
+            margin: 30px 25px 0 25px;
+
 
         }
+
+        @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+            margin: 20px 25px 0 25px;
+
+        }
+
+
 
         @media (min-width: $tablet-min) and (max-width: $tablet-max) {
             margin: 50px 25px 0 25px;
 
         }
+
+
+
     }
 }
 

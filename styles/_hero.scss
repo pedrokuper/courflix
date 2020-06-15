@@ -37,18 +37,19 @@ $pc-height-max: 1200px;
 
 
 
+
   @media (min-width: $mobile-min) and (max-width: $mobile-max) {
-    height: 65vh;
+    height: 50%;
     background-size: cover;
 
   }
 
   @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-    height: 70vh;
+    height: 50%;
   }
 
   @media (min-width: $pc-min) and (max-width: $pc-max) {
-    //height: 100vh;
+    height: 100%;
   }
 
 
