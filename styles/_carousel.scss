@@ -14,7 +14,7 @@ $mobile: 360px;
         background-color: rgb(0, 0, 0, 0.3);
         font-size: 1.5rem;
         height: 20%;
-        top: calc(60% - 20%);
+        top: calc(50% - 10%);
         //line-height: 20px;
         width: 40px;
         cursor: pointer;
@@ -48,7 +48,9 @@ $mobile: 360px;
 
 
 
-
+    .bb-preview-img {
+        max-width: 350px;
+    }
 
 
 }
