@@ -21,12 +21,10 @@ $tablet-min: 640px;
 $tablet-max: 1440px;
 $pc-min: 1441px;
 $pc-max: 1900px;
-$pc-height-min: 478px;
-$pc-height-max: 1200px;
 
 
 .hero {
-  padding: $padding-general;
+  
   background-image: url(/assets/img/bg-cover/netflix-bg.png);
   background-repeat: no-repeat;
   background-size: cover;

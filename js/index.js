@@ -11,8 +11,9 @@ Object.values(carousels).map(carousel => {
                 perView: 2
             },
             320: {
-                perView: 1,
+                perView: 0,
                 gap: 10,
+                
             },
             440: {
                 perView: 1,
@@ -23,9 +24,14 @@ Object.values(carousels).map(carousel => {
     });
 
 
-    slider.mount();
+    
 
+
+    slider.mount();
+    
 });
+
+
 
 
 const burgerMenu = document.querySelector(".burger-menu");

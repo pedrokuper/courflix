@@ -153,7 +153,6 @@
 }
 
 .hero {
-  padding: 10px;
   background-image: url(/assets/img/bg-cover/netflix-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -385,17 +384,47 @@
 }
 
 .serie-preview {
+  color: #fff;
+}
+.serie-preview .hero-bb {
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.884), rgba(170, 170, 170, 0.11)), url(/assets/img/breaking-bad/breakingbad-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  color: #fff;
+  height: 90vh;
+  padding: 20px 0;
 }
-.serie-preview .breaking-bad-logo {
+@media (min-width: 320px) and (max-width: 639px) {
+  .serie-preview .hero-bb {
+    background-size: cover;
+    background-position: center;
+    background-position: 30% 20%;
+  }
+}
+.serie-preview .hero-bb .breaking-bad-logo {
   margin-top: 50px;
-  margin-left: 25px;
+  margin-left: 20px;
 }
-.serie-preview .serie-info {
+@media (min-width: 320px) and (max-width: 639px) {
+  .serie-preview .hero-bb .breaking-bad-logo {
+    display: none;
+  }
+}
+.serie-preview .hero-bb .mobile-content {
+  margin-left: 20px;
+  margin-top: 140px;
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 639px) {
+  .serie-preview .hero-bb .mobile-content {
+    display: block;
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+}
+.serie-preview .hero-bb .mobile-content-specs {
+  margin-left: 20px;
+}
+.serie-preview .hero-bb .serie-info {
   display: flex;
   align-items: center;
   margin: 0 25px;
@@ -403,36 +432,73 @@
   max-width: 600px;
   margin: 10px 25px;
 }
-.serie-preview .serie-info .match-percentage {
+@media (min-width: 320px) and (max-width: 639px) {
+  .serie-preview .hero-bb .serie-info {
+    font-size: 1rem;
+  }
+}
+.serie-preview .hero-bb .serie-info .match-percentage {
   color: #009c04;
   font-size: 1.2rem;
   font-weight: 600;
 }
-.serie-preview .serie-info .data {
+.serie-preview .hero-bb .serie-info .data {
   margin-right: 20px;
 }
-.serie-preview .serie-buttons {
-  margin: 0 25px;
+@media (min-width: 320px) and (max-width: 639px) {
+  .serie-preview .hero-bb .serie-info .data {
+    display: none;
+  }
 }
-.serie-preview .serie-buttons .hero-button-link {
+.serie-preview .hero-bb .serie-buttons {
+  margin-left: 20px;
+  margin-top: -15px;
+}
+@media (min-width: 320px) and (max-width: 639px) {
+  .serie-preview .hero-bb .serie-buttons {
+    display: flex;
+  }
+}
+.serie-preview .hero-bb .serie-buttons .hero-button-link {
   display: inline-block;
   margin-top: 20px;
   color: #fff;
   text-decoration: none;
   margin-bottom: 30px;
 }
-.serie-preview .serie-buttons .play,
-.serie-preview .serie-buttons .my-list {
+@media (min-width: 320px) and (max-width: 639px) {
+  .serie-preview .hero-bb .serie-buttons .hero-button-link {
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+}
+.serie-preview .hero-bb .serie-buttons .play,
+.serie-preview .hero-bb .serie-buttons .my-list {
   border-radius: 9px;
   margin-right: 20px;
   background-color: rgba(157, 151, 151, 0.541521);
   padding: 20px 80px;
   font-size: 400;
 }
-.serie-preview .serie-buttons .play {
+@media (min-width: 320px) and (max-width: 639px) {
+  .serie-preview .hero-bb .serie-buttons .play,
+.serie-preview .hero-bb .serie-buttons .my-list {
+    text-align: center;
+    min-width: 200px;
+    padding: 10px 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 639px) {
+  .serie-preview .hero-bb .serie-buttons .my-list {
+    display: none;
+  }
+}
+.serie-preview .hero-bb .serie-buttons .play {
   background-color: red;
 }
-.serie-preview .serie-buttons .button {
+.serie-preview .hero-bb .serie-buttons .button {
   border-radius: 50%;
   border: 2px solid white;
   color: white;
@@ -440,16 +506,34 @@
   padding: 15px;
   margin-right: 10px;
 }
-.serie-preview .serie-buttons .far {
+@media (min-width: 320px) and (max-width: 639px) {
+  .serie-preview .hero-bb .serie-buttons .button {
+    display: none;
+  }
+}
+.serie-preview .hero-bb .serie-buttons .far {
   font-size: 2rem;
 }
-.serie-preview .description {
+.serie-preview .hero-bb .description {
   margin: 20px 0px 0px 25px;
   width: 100%;
   max-width: 600px;
   font-weight: 500;
   line-height: 36px;
   font-size: 1.4rem;
+}
+@media (min-width: 320px) and (max-width: 639px) {
+  .serie-preview .hero-bb .description .text-description {
+    font-size: 1rem;
+    line-height: 2.1rem;
+    max-width: 300px;
+  }
+}
+@media (min-width: 640px) and (max-width: 1440px) {
+  .serie-preview .hero-bb .description {
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+  }
 }
 .serie-preview .title {
   margin-top: 100px;
@@ -485,6 +569,7 @@ body {
 .series .series-nav-link {
   border: transparent;
   height: 50px;
+  margin-top: 20px;
 }
 @media (min-width: 320px) and (max-width: 639px) {
   .series .series-nav-link {
@@ -512,12 +597,7 @@ body {
   }
 }
 .series .series-title {
-  margin: 20px 25px 0 25px;
-}
-@media (min-height: 480px) and (max-height: 1200px) {
-  .series .series-title {
-    margin: 30px 25px 0 25px;
-  }
+  margin: 80px 25px 0 25px;
 }
 @media (min-width: 320px) and (max-width: 639px) {
   .series .series-title {
@@ -526,7 +606,7 @@ body {
 }
 @media (min-width: 640px) and (max-width: 1440px) {
   .series .series-title {
-    margin: 50px 25px 0 25px;
+    margin: 65px 25px 0 25px;
   }
 }
 

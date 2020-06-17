@@ -13,92 +13,206 @@ $padding-general: 10px;
 $margin-general: 50px;
 
 
-$tablet: 1000px;
-$mobile: 360px;
+$mobile-min: 320px;
+$mobile-max: 639px;
+$tablet-min: 640px;
+$tablet-max: 1440px;
+$pc-min: 1441px;
+$pc-max: 1900px;
+
+
 
 .serie-preview {
-    //padding: $padding-general;
-    background-image: linear-gradient(90deg,
-            rgba(0, 0, 0, 0.884),
-            rgba(170, 170, 170, 0.11)),
-        url(/assets/img/breaking-bad/breakingbad-cover.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+
+
+
     color: $white;
-    //margin-left: 25px;
 
-    .breaking-bad-logo {
-        margin-top: 50px;
-        margin-left: 25px;
+
+
+    .hero-bb {
+
+        background-image: linear-gradient(90deg,
+                rgba(0, 0, 0, 0.884),
+                rgba(170, 170, 170, 0.11)),
+            url(/assets/img/breaking-bad/breakingbad-cover.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        padding: 20px 0;
+
+
+
+        @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+            background-size: cover;
+            background-position: center;
+            background-position: 30% 20%;
+        }
+
+        .breaking-bad-logo {
+            margin-top: 50px;
+            margin-left: 20px;
+
+            @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+                display: none;
+
+
+            }
+
+
+        }
+
+
+        .mobile-content {
+
+            margin-left: 20px;
+            margin-top: 140px;
+            display: none;
+
+            @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+
+                display: block;
+                font-size: 2rem;
+                line-height: 3.5rem;
+
+
+            }
+
+
+        }
+
+        .mobile-content-specs {
+            margin-left: 20px;
+        }
+
+        .serie-info {
+            display: flex;
+            align-items: center;
+            margin: 0 25px;
+            width: 100%;
+            max-width: 600px;
+            margin: 10px 25px;
+
+            @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+                font-size: 1rem;
+
+            }
+
+            .match-percentage {
+                color: $green;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            .data {
+                margin-right: 20px;
+
+                @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+                    display: none;
+                }
+            }
+        }
+
+        .serie-buttons {
+
+            @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+                display: flex;
+            }
+
+            margin-left: 20px;
+            margin-top: -15px;
+
+            .hero-button-link {
+                display: inline-block;
+                margin-top: 20px;
+                color: $white;
+                text-decoration: none;
+                margin-bottom: 30px;
+
+                @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+                    flex-wrap: nowrap;
+                    margin-bottom: 20px;
+                }
+
+            }
+
+            .play,
+            .my-list {
+                border-radius: 9px;
+                margin-right: 20px;
+                background-color: $gray;
+                padding: 20px 80px;
+                font-size: 400;
+
+                @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+                    text-align: center;
+                    min-width: 200px;
+                    padding: 10px 30px;
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                }
+            }
+
+            .my-list {
+                @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+                    display: none;
+
+
+                }
+            }
+
+            .play {
+                background-color: red;
+            }
+
+            .button {
+                border-radius: 50%;
+                border: 2px solid white;
+                color: white;
+                background: none;
+                padding: 15px;
+                margin-right: 10px;
+
+                @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+                    display: none;
+                }
+            }
+
+
+            .far {
+                font-size: 2rem;
+            }
+        }
+
+        .description {
+            margin: 20px 0px 0px 25px;
+            width: 100%;
+            max-width: 600px;
+            font-weight: 500;
+            line-height: 36px;
+            font-size: 1.4rem;
+
+            .text-description {
+
+                @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+                    font-size: 1.0rem;
+                    line-height: 2.1rem;
+                    max-width: 300px;
+                }
+
+            }
+
+
+
+            @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+                font-size: 1.2rem;
+                line-height: 2.3rem;
+
+            }
+        }
+
     }
 
-    .serie-info {
-        display: flex;
-        align-items: center;
-        margin: 0 25px;
-        width: 100%;
-        max-width: 600px;
-        margin: 10px 25px;
-
-        .match-percentage {
-            color: $green;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-
-        .data {
-            margin-right: 20px;
-        }
-    }
-
-    .serie-buttons {
-        margin: 0 25px;
-
-        .hero-button-link {
-            display: inline-block;
-            margin-top: 20px;
-            color: $white;
-            text-decoration: none;
-            margin-bottom: 30px;
-
-        }
-
-        .play,
-        .my-list {
-            border-radius: 9px;
-            margin-right: 20px;
-            background-color: $gray;
-            padding: 20px 80px;
-            font-size: 400;
-        }
-
-        .play {
-            background-color: red;
-        }
-
-        .button {
-            border-radius: 50%;
-            border: 2px solid white;
-            color: white;
-            background: none;
-            padding: 15px;
-            margin-right: 10px;
-        }
-
-        .far {
-            font-size: 2rem;
-        }
-    }
-
-    .description {
-        margin: 20px 0px 0px 25px;
-        width: 100%;
-        max-width: 600px;
-        font-weight: 500;
-        line-height: 36px;
-        font-size: 1.4rem;
-    }
 
     .title {
 
@@ -118,4 +232,8 @@ $mobile: 360px;
         line-height: 1.4rem;
         font-size: 1rem;
     }
+
+   
 }
+
+
