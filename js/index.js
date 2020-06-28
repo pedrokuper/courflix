@@ -13,3 +13,19 @@ $('.carousel-container').slick({
         
     });
 });
+
+
+const burgerMenu = document.querySelector(".burger-menu");
+
+const navBar = document.querySelector(".nav-bar");
+
+const displayBurgerMenu = () => {
+    if (navBar.style.display === "block") {
+        navBar.style.display = "none";
+    } else {
+        navBar.style.display = "block";
+    }
+
+}
+
+burgerMenu.onclick = displayBurgerMenu;

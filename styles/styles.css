@@ -4,35 +4,8 @@
   display: flex;
   margin: 10px 25px;
 }
-.carousel-container .glide__arrow--left,
-.carousel-container .glide__arrow--right {
-  position: absolute;
-  border: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-size: 1.5rem;
-  height: 20%;
-  top: calc(50% - 10%);
-  width: 40px;
-  cursor: pointer;
-  z-index: 500;
-  transition: 0.2s ease all;
-  opacity: 0;
-}
-@media screen and (max-width: 800px) {
-  .carousel-container .glide__arrow--left,
-.carousel-container .glide__arrow--right {
-    display: none;
-  }
-}
 .carousel-container :hover {
   opacity: 100%;
-}
-.carousel-container .glide__arrow--left {
-  left: 0;
-}
-.carousel-container .glide__arrow--right {
-  right: 0;
 }
 .carousel-container .bb-preview-img {
   max-width: 350px;

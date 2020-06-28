@@ -6,28 +6,7 @@ $mobile: 360px;
     display: flex;
     margin: 10px 25px;
 
-    .glide__arrow--left,
-    .glide__arrow--right {
-        position: absolute;
-        border: none;
-        color: white;
-        background-color: rgb(0, 0, 0, 0.3);
-        font-size: 1.5rem;
-        height: 20%;
-        top: calc(50% - 10%);
-        //line-height: 20px;
-        width: 40px;
-        cursor: pointer;
-        z-index: 500;
-        transition: .2s ease all;
-        opacity: 0;
-
-
-        @media screen and (max-width: $tablet) {
-            display: none;
-        }
-
-    }
+   
 
 
 
@@ -35,16 +14,6 @@ $mobile: 360px;
         opacity: 100%;
     }
 
-
-    .glide__arrow--left {
-
-        left: 0;
-    }
-
-
-    .glide__arrow--right {
-        right: 0;
-    }
 
 
 
