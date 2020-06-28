@@ -38,6 +38,38 @@
   max-width: 350px;
 }
 
+.slick-prev {
+  position: absolute;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  height: 20%;
+  left: 0;
+  top: calc(50% - 10%);
+  width: 40px;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+  opacity: 0;
+}
+
+.slick-next {
+  position: absolute;
+  right: 0;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  height: 20%;
+  top: calc(50% - 10%);
+  width: 40px;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+  opacity: 0;
+}
+
 .header {
   position: relative;
   display: inline-flex;
