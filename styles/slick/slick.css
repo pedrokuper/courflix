@@ -83,7 +83,9 @@
 }
 
 .slick-slide img {
+    max-width: 350px;
     display: block;
+    margin-bottom: 20px;
 }
 
 .slick-slide.slick-loading img {
